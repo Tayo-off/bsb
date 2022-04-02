@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title> FIGHT!!! </title>
+	</head>
+	<body>
+		<img src='zombie.png' width='500' id='warrior'>
+<br/><input type='button' onClick='fight()'> Бить его </input>
+<br/><input type='button' onClick='HP()'> Здоровье </input>
+		<script type='text/javascript'>
+			alert ('Это противник');
+			var kick_hand=0;
+			var healse_z=50;
+			var healse_p=75;
+			var won=0;
+      document.Write ("Your HP = "+healse_p+" Zombie's HP = "+healse_z); 
+      function fight(){
+      alert ('В бой!!!');
+      kick_hand=1;
+  if (kick_hand==1) {
+			alert ('-20 hp ZOMBIE');
+			healse_z=healse_z-20;
+			kick_hand='0';
+			if (healse_z<='0') {
+				alert ('You won this battle and you can back to the game ');
+			}
+}
+healse_p=healse_p-25;
+ }
+function HP(){
+alert ('Your HP: '+healse_p);
+alert ("Zombie's HP "+healse_z);
+}
+				
+		</script>
+	</body>
+</html>	
+				
